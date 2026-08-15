@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Karishma Choubey — Senior Product Manager working across fintech, payments, AI, enterprise products and customer experience.">
+<title>Karishma Choubey | Senior Product Manager</title>
+<style>
+:root{--bg:#f7f7f4;--surface:#fff;--text:#171717;--muted:#666;--line:#e6e3dd;--accent:#155e75;--accentSoft:#e9f4f5;--dark:#14212b;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,247,244,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,227,221,.8)}
+nav .wrap{height:70px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:850;letter-spacing:-.035em}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;font-size:13px;color:#555}.navlinks a:hover{color:var(--accent)}
+.hero{padding:92px 0 88px}.hero-grid{display:grid;grid-template-columns:330px 1fr;gap:76px;align-items:center}
+.portrait{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:9px solid #fff;box-shadow:0 25px 75px rgba(30,20,50,.15)}
+.eyebrow,.kicker{color:var(--accent);font-weight:850;font-size:12px;text-transform:uppercase;letter-spacing:.13em}
+h1{font-size:clamp(50px,7vw,78px);line-height:.98;letter-spacing:-.06em;margin:14px 0 17px}
+.tagline{font-size:25px;line-height:1.3;max-width:700px;margin-bottom:20px;color:#333}
+.intro{font-size:17px;color:var(--muted);max-width:760px}
+.buttons{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}
+.btn{padding:11px 17px;border-radius:999px;border:1px solid #d4d0ca;background:#fff;font-size:13px;font-weight:750}
+.btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}
+.section{padding:90px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+h2{font-size:clamp(35px,5vw,51px);line-height:1.03;letter-spacing:-.05em;margin-top:8px}
+.section-note{max-width:470px;color:var(--muted);font-size:15px}
+.case-list{display:grid;gap:22px}
+.case{background:#fff;border:1px solid var(--line);border-radius:25px;padding:31px;box-shadow:0 10px 35px rgba(30,20,50,.035)}
+.case-top{display:grid;grid-template-columns:72px 1fr;gap:18px;align-items:center;margin-bottom:25px}
+.logo{width:70px;height:70px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid #eee;display:grid;place-items:center}
+.logo svg{width:100%;height:100%;display:block}
+.case h3{font-size:27px;letter-spacing:-.035em}.role{font-size:13px;color:#777;margin-top:2px}
+.case h4{font-size:20px;letter-spacing:-.02em;margin-bottom:10px}
+.case p,.case li{color:#555;font-size:15px}.case ul{margin:15px 0 0 19px}.case li{margin:7px 0}
+.case-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.pill{padding:6px 10px;border-radius:999px;background:var(--accentSoft);color:#155e75;font-size:11px;font-weight:750}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:23px}
+.mini{background:#f7f5fb;border-radius:14px;padding:15px}.mini strong{display:block;color:var(--accent);font-size:18px}.mini span{font-size:11px;color:#666}
+.thinking{background:var(--dark);color:#fff;border-radius:30px;padding:50px}
+.thinking h2{max-width:700px}.thinking-intro{color:#d5d1dc;max-width:780px;margin-top:16px;font-size:16px}
+.principles{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:30px;background:#35424c;border:1px solid #35424c;border-radius:18px;overflow:hidden}
+.principle{background:var(--dark);padding:23px}.principle b{color:#8ed1d2;font-size:11px;letter-spacing:.12em}.principle h3{font-size:19px;margin:6px 0}.principle p{color:#c8c3ce;font-size:14px}
+.journey{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:30px}
+.journey-card{background:#fff;border:1px solid var(--line);border-radius:19px;padding:23px}.journey-card .year{color:var(--accent);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.1em}
+.journey-card h3{font-size:20px;margin:7px 0}.journey-card p{font-size:14px;color:var(--muted)}
+.reading{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.book{background:#fff;border:1px solid var(--line);border-radius:19px;padding:24px}.book h3{font-size:21px;margin:5px 0}.book .author{font-size:13px;color:var(--accent);font-weight:750}.book p{font-size:14px;color:var(--muted);margin-top:8px}
+.about{display:grid;grid-template-columns:.72fr 1.28fr;gap:65px}.about .big{font-size:43px;line-height:1.04;letter-spacing:-.05em}.about-copy p{color:#555;font-size:16px;margin-bottom:15px}
+.contact{text-align:center;padding:100px 0}.contact h2{max-width:760px;margin:10px auto}.contact p{max-width:650px;margin:15px auto;color:var(--muted);font-size:16px}
+footer{border-top:1px solid var(--line);padding:27px 0;color:#777;font-size:12px}
+@media(max-width:800px){.navlinks{display:none}.hero-grid,.about{grid-template-columns:1fr;gap:40px}.portrait{width:min(280px,75vw);margin:auto}.section-head{display:block}.section-note{margin-top:13px}.case-grid,.journey,.reading{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.thinking{padding:34px 24px}}
+
+.section + .section{border-top:1px solid rgba(230,227,221,.65)}
+#education .journey-card{min-height:180px;display:flex;flex-direction:column;justify-content:center}
+#education .year{font-size:11px}
+@media(max-width:800px){#education .journey-card{min-height:auto}}
+
+.edu-top{display:flex;align-items:center;gap:17px;margin-bottom:18px}
+.edu-logo{width:70px;height:70px;border-radius:16px;overflow:hidden;background:#fff;border:1px solid #e5e2dc;display:grid;place-items:center;flex:none}
+.edu-logo svg{width:100%;height:100%;display:block}
+.edu-card{min-height:205px}
+
+.edu-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.edu-logo{background:#fff;padding:8px}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top">Karishma Choubey<span>.</span></a>
+<div class="navlinks">
+<a href="#work">Work</a><a href="#thinking">Thinking</a><a href="#journey">Journey</a><a href="#education">Education</a><a href="#learning">Learning</a><a href="#about">About</a><a href="#contact">Contact</a>
+</div></div></nav>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div><img class="portrait" src="profile.jpg" alt="Karishma Choubey"></div>
+<div>
+<div class="eyebrow">Senior Product Manager · Fintech · AI · Customer Experience</div>
+<h1>Karishma Choubey</h1>
+<p class="tagline">I build products that make complex customer journeys feel simple.</p>
+<p class="intro">I currently build dispute and self service experiences at Visa, with a focus on conversational AI, voice automation and customer experience. Previously, I worked on SAP Concur, building AI powered experiences for enterprise customers.</p>
+<div class="buttons"><a class="btn primary" href="#work">Explore my work</a><a class="btn" href="https://www.linkedin.com/in/karishma-choubey/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+</div></div></section>
+
+<section class="section" id="work"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Selected Work</div><h2>Products shaped by customer problems.</h2></div><p class="section-note">A product journey across payments, enterprise software and technology, with a consistent focus on making complex experiences simpler.</p></div>
+<div class="case-list">
+
+<article class="case">
+<div class="case-top"><div class="logo"><svg viewBox="0 0 120 70" role="img" aria-label="Visa logo" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="70" rx="12" fill="#fff"/>
+  <text x="60" y="47" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-style="italic" font-weight="900" fill="#1434CB">VISA</text>
+</svg></div><div><h3>Senior Product Manager</h3><div class="role">Jul 2025 to Present · Bengaluru</div></div></div>
+<h4>Reimagining the customer dispute experience</h4>
+<p>At Visa, I work on fraud and non fraud dispute journeys where trust, clarity and resolution matter. I own product strategy across self service, conversational AI and voice automation.</p>
+<ul>
+<li>Start with customer research, behavioral data and operational signals to understand where friction actually occurs.</li>
+<li>Decide whether the right intervention is UX redesign, automation, conversational AI or human support rather than defaulting to a technology solution.</li>
+<li>Translate financial services regulations and compliance constraints into intuitive customer experiences.</li>
+<li>Align Business, UX, Legal and Compliance, Engineering and Customer teams around a shared product outcome.</li>
+</ul>
+<div class="case-meta"><span class="pill">Fintech</span><span class="pill">Payments</span><span class="pill">Disputes</span><span class="pill">Conversational AI</span><span class="pill">Voice</span><span class="pill">B2B and B2C</span></div>
+<div class="case-grid"><div class="mini"><strong>Problem first</strong><span>Diagnose before deciding what to build.</span></div><div class="mini"><strong>AI deliberately</strong><span>Use AI where it genuinely reduces customer effort.</span></div><div class="mini"><strong>Trust matters</strong><span>Design for regulated, high stakes journeys.</span></div></div>
+</article>
+
+<article class="case">
+<div class="case-top"><div class="logo"><svg viewBox="0 0 120 70" role="img" aria-label="SAP logo" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="70" rx="8" fill="#0874B9"/>
+  <text x="60" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="900" fill="#fff">SAP</text>
+</svg></div><div><h3>Product Manager · SAP Concur</h3><div class="role">2021 to 2025</div></div></div>
+<h4>Making enterprise complexity easier to navigate</h4>
+<p>Within SAP, my product work focused on SAP Concur, an enterprise Travel and Expense platform. I worked on experiences that helped administrators and customers find answers, understand system health and complete complex workflows with less friction.</p>
+<ul>
+<li>Built and launched an AI chatbot that helped admins and customers ask questions, resolve issues and navigate Concur workflows.</li>
+<li>Designed an admin health dashboard to make system health and configurations easier to understand.</li>
+<li>Replaced manual configuration searches with conversational discovery and natural language interaction.</li>
+<li>Delivered capabilities reaching 40K plus customers globally.</li>
+</ul>
+<div class="case-meta"><span class="pill">Enterprise SaaS</span><span class="pill">AI Product</span><span class="pill">Self Service</span><span class="pill">Admin Experience</span></div>
+<div class="case-grid"><div class="mini"><strong>40K+</strong><span>Customers reached globally.</span></div><div class="mini"><strong>AI</strong><span>Conversational product experience.</span></div><div class="mini"><strong>Outcome</strong><span>Less friction finding complex information.</span></div></div>
+</article>
+
+<article class="case">
+<div class="case-top"><div class="logo"><svg viewBox="0 0 160 70" role="img" aria-label="Capgemini logo" xmlns="http://www.w3.org/2000/svg">
+      <rect width="160" height="70" rx="10" fill="#fff"/>
+      <text x="80" y="45" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#0070AD">capgemini</text>
+      <path d="M50 22c15-10 31-6 40 5-12-3-23 0-30 8-5 5-10 6-15 3 0-7 1-11 5-16z" fill="#0070AD"/>
+    </svg></div><div><h3>Associate Consultant and Software Analyst</h3><div class="role">2019 to 2021</div></div></div>
+<h4>The technology foundation behind my product thinking</h4>
+<p>My early career gave me a strong grounding in enterprise technology, requirements and delivery. It also taught me how customer and business problems become technical decisions.</p>
+<ul>
+<li>Worked with business analysts and developers across requirements, testing, automation and enterprise application delivery.</li>
+<li>Worked on energy and utility journeys including customer details, billing, subscriptions and account management.</li>
+<li>Used automation and data validation to improve complex application workflows.</li>
+</ul>
+<div class="case-meta"><span class="pill">Enterprise Technology</span><span class="pill">Requirements</span><span class="pill">Automation</span><span class="pill">Energy and Utilities</span></div>
+</article>
+
+</div></div></section>
+
+<section class="section" id="thinking"><div class="wrap"><div class="thinking">
+<div class="kicker">Product Philosophy</div><h2>Problem first. Solution second.</h2>
+<p class="thinking-intro">The products I enjoy most sit in complex environments. My job is to make the complexity understandable, make the right tradeoffs and help teams move toward a customer outcome.</p>
+<div class="principles">
+<div class="principle"><b>01</b><h3>Diagnose before designing</h3><p>I combine research, data and frontline signals to understand why a journey is failing before deciding what to build.</p></div>
+<div class="principle"><b>02</b><h3>Let the problem choose the technology</h3><p>AI, automation, traditional UX and human support are tools. The customer problem determines which one belongs in the experience.</p></div>
+<div class="principle"><b>03</b><h3>Make complexity invisible</h3><p>Payments, enterprise systems and regulations can be complicated behind the scenes without making customers feel that complexity.</p></div>
+<div class="principle"><b>04</b><h3>Align before accelerating</h3><p>Strong product outcomes come from bringing Business, Design, Engineering, Compliance and Operations around the same customer problem.</p></div>
+</div></div></div></section>
+
+<section class="section" id="journey"><div class="wrap">
+<div class="kicker">Career Journey</div><h2>From technology to product leadership.</h2>
+<div class="journey">
+<div class="journey-card"><div class="year">2019 to 2021</div><h3>Technology foundation</h3><p>Capgemini gave me deep exposure to enterprise applications, requirements, automation and how software gets delivered in complex environments.</p></div>
+<div class="journey-card"><div class="year">2021 to 2025</div><h3>Product transformation</h3><p>At SAP, I moved closer to product ownership through SAP Concur, AI experiences, admin tooling and privacy focused product work.</p></div>
+<div class="journey-card"><div class="year">2025 to present</div><h3>Product leadership</h3><p>At Visa, I apply that product thinking to fintech, payments, disputes, self service, AI and high stakes customer journeys.</p></div>
+</div></div></section>
+
+
+
+
+
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="kicker">Education</div>
+    <h2>Learning that shaped my perspective.</h2>
+    <div class="journey">
+
+      <div class="journey-card edu-card">
+        <div class="edu-top">
+          <div class="edu-logo">
+            <img src="iim-lucknow-logo.webp" alt="Indian Institute of Management Lucknow">
+          </div>
+          <div>
+            <div class="year">Indian Institute of Management Lucknow</div>
+            <h3>Management Development Program</h3>
+          </div>
+        </div>
+        <p>
+          Data Driven Product Management, strengthening my perspective on product strategy,
+          customer centric decision making, analytics and building products around measurable outcomes.
+        </p>
+      </div>
+
+      <div class="journey-card edu-card">
+        <div class="edu-top">
+          <div class="edu-logo">
+            <img src="lpu-logo.png" alt="Lovely Professional University">
+          </div>
+          <div>
+            <div class="year">Lovely Professional University</div>
+            <h3>Bachelor of Technology</h3>
+          </div>
+        </div>
+        <p>
+          My technology and engineering foundation, which became the starting point for my
+          journey from software delivery into product management.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="learning"><div class="wrap">
+<div class="kicker">What Shapes My Thinking</div><h2>Learning beyond the roadmap.</h2>
+<p class="section-note" style="margin-top:12px">I use books and structured learning to sharpen how I think about discovery, outcomes, product teams and customer value.</p>
+<div class="reading">
+<div class="book"><div class="author">Marty Cagan</div><h3>Inspired</h3><p>Influenced how I think about empowered product teams, discovery and building products customers actually value.</p></div>
+<div class="book"><div class="author">Marty Cagan</div><h3>Transformed</h3><p>Helped me think beyond individual product practices toward the organisational systems that enable strong product outcomes.</p></div>
+<div class="book"><div class="author">Teresa Torres</div><h3>Continuous Discovery Habits</h3><p>A practical lens for keeping customer evidence close to everyday product decisions rather than treating discovery as a one time phase.</p></div>
+<div class="book"><div class="author">Melissa Perri</div><h3>Escaping the Build Trap</h3><p>A useful reminder that shipping more features is not the same as creating meaningful customer and business outcomes.</p></div>
+</div></div></section>
+
+<section class="section" id="about"><div class="wrap about">
+<div><div class="kicker">A Little More About Me</div><p class="big">I like hard problems with human consequences.</p></div>
+<div class="about-copy">
+<p>My career started close to technology and delivery, but my curiosity increasingly moved toward the product questions behind the work: why are we building this, whose problem are we solving and what would make the experience genuinely better?</p>
+<p>That curiosity led me into product management. I enjoy starting with a customer problem, combining qualitative insight with data, framing the opportunity and bringing different disciplines together around a clear product direction.</p>
+<p>I am particularly passionate about AI powered customer experiences, self service, fintech and payments, and products that make complicated workflows feel simple. I care about the details, but I care even more about whether the product creates meaningful value for the person using it.</p>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="kicker">What I want to solve next</div><h2>Complex problems where technology can make the customer experience dramatically simpler.</h2>
+<p>AI powered customer experiences, fintech and payments, self service and enterprise products are the spaces where I am most excited to keep learning and building.</p>
+<div class="buttons" style="justify-content:center"><a class="btn primary" href="https://www.linkedin.com/in/karishma-choubey/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn" href="mailto:hello@example.com">Email me</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Karishma Choubey · Senior Product Manager</div></footer>
+</body>
+</html>
